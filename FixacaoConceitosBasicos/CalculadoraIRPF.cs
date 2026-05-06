@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FixacaoConceitosBasicos
+namespace MeuProjeto
 {
     public class CalculadoraIRPF
     {
@@ -17,7 +17,8 @@ namespace FixacaoConceitosBasicos
 
                 Console.Write("Informe o número de dependentes: ");
                 int dependentes = Convert.ToInt32(Console.ReadLine());
-                                
+
+                // Dedução por dependente (valor aproximado usado em 2015: R$ 189,59)
                 decimal deducaoDependente = 189.59m;
                 renda -= dependentes * deducaoDependente;
 
@@ -52,9 +53,7 @@ namespace FixacaoConceitosBasicos
                 }
 
                 imposto = (renda * (aliquota / 100)) - parcelaDeduzir;
-
-                if (imposto < 0)
-                    imposto = 0;
+                if (imposto < 0) imposto = 0;
 
                 Console.WriteLine($"\nRenda ajustada: R$ {renda:F2}");
                 Console.WriteLine($"Alíquota aplicada: {aliquota}%");

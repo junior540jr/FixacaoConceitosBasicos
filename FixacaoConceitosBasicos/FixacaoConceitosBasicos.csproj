@@ -43,7 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aluno.cs" />
+    <Compile Include="Aposentadoria.cs" />
     <Compile Include="CalculadoraIRPF.cs" />
+    <Compile Include="FinanciamentoVeiculo.cs" />
+    <Compile Include="Funcionario.cs" />
+    <Compile Include="GestorAlunos.cs" />
+    <Compile Include="GestorFuncionarios.cs" />
+    <Compile Include="JogoAdivinhacao.cs" />
+    <Compile Include="JogoDaVelha.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
